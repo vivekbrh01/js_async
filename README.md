@@ -7,6 +7,15 @@ The aim of the exercise is to understand how Asynchronous JavaScript works. ANd 
   * Promises
   * XMLHttpRequest
 
+## XMLHttpRequest
+
+```js
+  const xhr = new XMLHttpRequest();
+  xhr.addEventListener("load", () => console.log(xhr.response));
+  xhr.open("GET", "https://api.github.com/users/nnnkit");
+  xhr.send();
+```
+
 ## Getting Started
 
 **Setup your project by following these instructions:**
