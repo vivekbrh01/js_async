@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script defer src="./main.js"></script>
+    <!-- Title -->
     <title>Github User Search</title>
   </head>
   <body>
-    <script src="./main.js"></script>
+    <header class="text-center">
+      <h1>Seach Github Profile by Username</h1>
+    </header>
+    <main>
+      <div >
+        <section class="text-center">
+          <input type="text" class="input" placeholder="Github Username"><!--  
+      --> <button class="btn">Search</button>
+        </section>
+      </div>   
+      <section class="flex info-section">
+        <div>
+          <img src="#" alt="" class="user-img">
+        </div>
+        <div>
+          <h2 class="user-name"></h2>
+          <h2 class="user-id"></h2>
+          <h2 class="user-bio"></h2>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
