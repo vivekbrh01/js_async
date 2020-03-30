@@ -10,7 +10,9 @@ setTimeout(sayHello, 1000);
 console.log("Hey You!");
 ```
 
- output
+ output: 
+ 1 ms: Hey You!
+ 1001 ms: Hey You Called Me
 
 2.
 ```js
@@ -22,7 +24,9 @@ setTimeout(sayHello, 0);
 
 console.log("Hey You!");
 ```
- output
+ output:
+1 ms: Hey You!
+2 ms: Hey You Called Me
 
 3.
 ```js
@@ -35,7 +39,11 @@ function main() {
 }
 main();
 ```
- output
+ output:
+ 1 ms: A
+ 2 ms: C
+ 3 ms: B
+
 
 4.
 ```js
@@ -55,7 +63,7 @@ function main() {
   console.log("C");
 }
 
- output
+ output: Since the `function main ()` is never called it will return `undefined`
 
 5. Look at the output of the code below to understand hwo things are happening.
 
@@ -79,4 +87,8 @@ function main() {
 
 main();
 
+output: 
+0 ms: A
+3001 ms : C
+3002 ms : B
 ```
