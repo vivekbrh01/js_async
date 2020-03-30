@@ -1,16 +1,36 @@
 ## Promises
 
-* Promises are readability enhancer where a special object gets returned immediatly when we make a call to browser API.
+- Promises are readability enhancer where a special object gets returned immediatly when we make a call to browser API.
 
-* When you are using  `setTimeout` in javascript it doesn't do anything in `js` it does everything in the browser apis.
+- When you are using `setTimeout` in javascript it doesn't do anything in `js` it does everything in the browser apis.
 
-* Promises act as a placeholder for the data we hope to get back in future.
+- Promises act as a placeholder for the data we hope to get back in future.
 
-* We attach a function to run once data is loaded using `then` method.
+- We attach a function to run once data is loaded using `then` method.
 
-* We can also attach error handeling using `catch` method.
+- We can also attach error handeling using `catch` method.
 
-* `then` or `catch` return a promise.
+- `then` or `catch` return a promise.
+
+## Promise States
+
+![Promise State](./images/PromiseStates.jpg)
+
+- **Promise can be on of these three promise states.**
+  1. In start the promise is pending
+  2. If the result is availabel its fulfilled
+  3. If something goes wrong and an error happened promise is Rejected.
+  4. Once a promise is fulfilled it's state will not change.
+
+## Promise Example
+
+```js
+function delayAction() {
+  new Promise().then();
+}
+```
+
+1. When we specify `then` method on promise we can specify two handlers. `onFulfilled` and `onRejected` handler.
 
 ```js
 // Creating a promise
@@ -68,10 +88,13 @@ console.log("ends");
 ```
 
 Guess the output:
+
 ```js
 const xhr = new XMLHttpRequest();
 xhr.addEventListener("load", () => console.log(xhr.response.login));
 xhr.open("GET", "https://api.github.com/users/nnnkit");
 xhr.send();
-fetch("https://api.github.com/users/getify").then(res => res.json()).then(d => console.log(d.login))
+fetch("https://api.github.com/users/getify")
+  .then(res => res.json())
+  .then(d => console.log(d.login));
 ```
