@@ -20,9 +20,14 @@ Write a function delay that returns a promise. And that promise should return a 
 This challenge we'll chain promises together using `.then` Create two variables: `firstPromise` and `secondPromise`.
 
 Set `secondPromise` to be a promise that resolves to "Second!".
+
 Set `firstPromise` to be a promise that resolves to `secondPromise`.
+
 Call the firstPromise with a `.then`, which will return the secondPromise promise.
+
 Then print the contents of the promise after it has been resolved by passing `console.log` to `.then`
 
 ### Challenge 7
-We have a API that gets data from a database, it takes an index parameter and returns a promise Your challenge is to use Promise.all to make 3 API calls and return all the data when the calls are complete#
+We have a API that gets data from a database, it takes an index parameter and returns a promise.
+
+Your challenge is to use Promise.all to make 3 API calls and return all the data when the calls are complete#

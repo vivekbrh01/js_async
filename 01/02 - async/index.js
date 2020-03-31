@@ -35,7 +35,7 @@ function helloGoodbye() {
   console.log("Hello");
   setTimeout( function display() {
     console.log("Good Bye");
-  }, 2000)
+  }, 2000 );
 }
 // Uncomment the following line to check your work!
 helloGoodbye(); // should log: hello // should also log (after 3 seconds): good bye
